@@ -20,9 +20,11 @@ namespace Sum_of_10_random_numbers
                 int[] array = new int[10];
                 Random random = new Random();
                 for (int i = 0; i < 10; i++)
-                {
-                    array[i] = random.Next(Min, Max);
-                    sw.WriteLine(random.Next(Min, Max));                    
+                {                    
+                    int number = random.Next(Min, Max);
+                    array[i] = number;
+                    sw.WriteLine(number);         
+                    
                 }
                 int sum = array.Sum();
                 Console.WriteLine(sum);
